@@ -47,7 +47,7 @@
         }
 
         .r2 {
-            height: 50px;
+            height: 100%;
             background-color: #f1f1f1;
         }
 
@@ -81,8 +81,7 @@
         .left-nav>li>a {
             display: block;
             padding: 15px 0px 15px 30px;
-            background-color: #f4f4f4
-            ;
+            background-color: #f4f4f4;
             font-weight: bold;
             text-decoration: none;
             transition-duration: 0.7s;
@@ -93,7 +92,8 @@
         }
 
         .c2 {
-            padding: 2em; ;
+            padding: 2em;
+
         }
 
         .h2-content {
@@ -102,27 +102,29 @@
             width: 100%;
         }
 
-        .c2 > img {
+        .c2>img {
             width: 100%;
             align-self: center;
-            max-height: 130 px;
+            max-height: 150 px;
         }
 
         .contact-form {
             width: 500px;
-            padding: 500px;
-            margin: 100px;
+            padding: 250px;
+            margin: 50px auto;
         }
+
         .contact-input {
             width: 91%;
-            padding: 15 px;
+            padding: 15px;
             margin: 5px;
         }
+
         .submit-button {
             padding: 10px 25px;
             background-color: #CCC;
             float: right;
-            margin-top: 12px;  
+            margin-top: 12px;
         }
     </style>
 </head>
@@ -150,7 +152,7 @@
                 <input placeholder="First Name" type="text" id="first-name" class="contact-input">
                 <input placeholder="Last Name" type="text" id="last-name" class="contact-input">
                 <input placeholder="Email" type="email" class="contact-input">
-            <button  onclick="contact.goToHome()" class="submit-button" type="submit">Submit</button> 
+                <button onclick="contact.goToHome()" class="submit-button" type="submit">Submit</button>
             </form>
         </div>
     </div>

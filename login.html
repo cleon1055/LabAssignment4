@@ -47,7 +47,7 @@
         }
 
         .r2 {
-            height: 50px;
+            height: 100%;
             background-color: #f1f1f1;
         }
 
@@ -56,6 +56,7 @@
             background-color: #fff;
             grid-column-gap: 1em;
         }
+
         .c1 {
             min-width: 200px;
         }
@@ -90,7 +91,7 @@
         }
 
         .c2 {
-         padding: 2em; 
+            padding: 2em;
         }
 
         .h2-content {
@@ -99,7 +100,7 @@
             width: 100%;
         }
 
-        .c2 > img {
+        .c2>img {
             width: 100%;
             align-self: center;
             max-height: 130 px;
@@ -107,26 +108,28 @@
 
         .contact-form {
             width: 500px;
-            padding: 500px;
-            margin: 100px;
+            padding: 250px;
+            margin: 50px auto;
         }
+
         .contact-input {
             width: 91%;
             padding: 15 px;
             margin: 5px;
         }
+
         .submit-button {
             padding: 10px 25px;
             background-color: #CCC;
             float: right;
-            margin-top: 12px;  
+            margin-top: 12px;
         }
 
         .error-message {
             color: red;
             display: block;
             margin-top: 5px;
-            padding: 7px; 
+            padding: 7px;
             display: none;
         }
     </style>
@@ -143,8 +146,8 @@
             <form class="contact-form">
                 <input placeholder="User Name" type="text" id="username" class="contact-input">
                 <input placeholder="Password" type="text" id="password" class="contact-input">
-            <button onclick="login.login()" class="submit-button" type="button">Login</button>
-            <span id="error-box" class="error-message">Error Here</span> 
+                <button onclick="login.login()" class="submit-button" type="button">Login</button>
+                <span id="error-box" class="error-message">Error Here</span>
             </form>
         </div>
     </div>
